@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`job prepareDataByServices 1`] = `
+[
+  {
+    "cost": 0.0002699838,
+    "service": "AWS Data Transfer",
+    "usage": 0,
+  },
+  {
+    "cost": 0.00026998340000000003,
+    "service": "AWS Lambda",
+    "usage": 37242.93113643781,
+  },
+  {
+    "cost": 9.6e-8,
+    "service": "Amazon EC2 Container Registry (ECR)",
+    "usage": 0.029259878399999998,
+  },
+  {
+    "cost": 1.3399999999999998e-8,
+    "service": "Amazon DynamoDB",
+    "usage": 798.0130995859,
+  },
+  {
+    "cost": 5e-10,
+    "service": "Amazon Simple Storage Service",
+    "usage": 189.22589179750003,
+  },
+  {
+    "cost": 0,
+    "service": "AWS Key Management Service",
+    "usage": 427,
+  },
+  {
+    "cost": 0,
+    "service": "Amazon API Gateway",
+    "usage": 1423.0002361097,
+  },
+  {
+    "cost": 0,
+    "service": "Amazon Simple Queue Service",
+    "usage": 76664.0000040512,
+  },
+  {
+    "cost": 0,
+    "service": "AmazonCloudWatch",
+    "usage": 0.2721100088,
+  },
+  {
+    "cost": 0,
+    "service": "Tax",
+    "usage": 0,
+  },
+  {
+    "cost": 0,
+    "service": "Amazon Simple Notification Service",
+    "usage": 24.0000005364,
+  },
+  {
+    "cost": 0,
+    "service": "CloudWatch Events",
+    "usage": 4,
+  },
+  {
+    "cost": 0,
+    "service": "AWS Cost Explorer",
+    "usage": 6,
+  },
+]
+`;

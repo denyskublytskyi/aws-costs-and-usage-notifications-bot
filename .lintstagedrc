@@ -1,0 +1,4 @@
+{
+  "*.mjs": "yarn eslint",
+  "*.js": "yarn eslint"
+}

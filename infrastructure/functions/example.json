@@ -1,0 +1,1252 @@
+{
+  "$metadata": {
+    "httpStatusCode": 200,
+    "requestId": "a2e6bbd1-ba80-40e3-bd54-d0b0e49d8856",
+    "attempts": 1,
+    "totalRetryDelay": 0
+  },
+  "DimensionValueAttributes": [],
+  "GroupDefinitions": [
+    {
+      "Key": "SERVICE",
+      "Type": "DIMENSION"
+    }
+  ],
+  "ResultsByTime": [
+    {
+      "Estimated": true,
+      "Groups": [
+        {
+          "Keys": [
+            "AWS Data Transfer"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "-0.0000334028",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Key Management Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "8",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Lambda"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000334031",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "4658.0052755847",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon API Gateway"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "113.0000178267",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon DynamoDB"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000000028",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "205.5016519627",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon EC2 Container Registry (ECR)"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "-0.000000012",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0.0036574848",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Queue Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "9206",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Storage Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "-0.0000000001",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "23.0282170093",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AmazonCloudWatch"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0.0337915073",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Tax"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0",
+              "Unit": "N/A"
+            }
+          }
+        }
+      ],
+      "TimePeriod": {
+        "End": "2024-03-02",
+        "Start": "2024-03-01"
+      },
+      "Total": {}
+    },
+    {
+      "Estimated": true,
+      "Groups": [
+        {
+          "Keys": [
+            "AWS Data Transfer"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "-0.0000454666",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Lambda"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000454662",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "4786.088335106",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon API Gateway"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "216.0000307786",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon DynamoDB"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000000025",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "84.5016491251",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon EC2 Container Registry (ECR)"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "-0.000000012",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0.0036574848",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Queue Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "9198",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Storage Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000000001",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "23.0282257916",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AmazonCloudWatch"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0.0340170567",
+              "Unit": "N/A"
+            }
+          }
+        }
+      ],
+      "TimePeriod": {
+        "End": "2024-03-03",
+        "Start": "2024-03-02"
+      },
+      "Total": {}
+    },
+    {
+      "Estimated": true,
+      "Groups": [
+        {
+          "Keys": [
+            "AWS Data Transfer"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "-0.0000344876",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Key Management Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "176",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Lambda"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000344875",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "5028.5627824647",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon API Gateway"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "173.0000351511",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon DynamoDB"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "-0.0000000033",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "25.0016511249",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon EC2 Container Registry (ECR)"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "-0.000000012",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0.0036574848",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Queue Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "9200",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Storage Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "19.0282266231",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AmazonCloudWatch"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0.033972329",
+              "Unit": "N/A"
+            }
+          }
+        }
+      ],
+      "TimePeriod": {
+        "End": "2024-03-04",
+        "Start": "2024-03-03"
+      },
+      "Total": {}
+    },
+    {
+      "Estimated": true,
+      "Groups": [
+        {
+          "Keys": [
+            "AWS Data Transfer"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "-0.0000324222",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Key Management Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "80",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Lambda"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000324214",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "4923.0251978755",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon API Gateway"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "241.0000455419",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon DynamoDB"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "-0.0000000003",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "24.00165087",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon EC2 Container Registry (ECR)"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "-0.000000012",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0.0036574848",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Notification Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "16.0000003576",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Queue Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "11407.0000013709",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Storage Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "-0.0000000001",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "25.0282296343",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AmazonCloudWatch"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0.034319964",
+              "Unit": "N/A"
+            }
+          }
+        }
+      ],
+      "TimePeriod": {
+        "End": "2024-03-05",
+        "Start": "2024-03-04"
+      },
+      "Total": {}
+    },
+    {
+      "Estimated": true,
+      "Groups": [
+        {
+          "Keys": [
+            "AWS Data Transfer"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "-0.000029297",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Key Management Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "40",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Lambda"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000292971",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "4691.0723984825",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon API Gateway"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "180.0000298686",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon DynamoDB"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000000006",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "24.0016530216",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon EC2 Container Registry (ECR)"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "-0.000000012",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0.0036574848",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Notification Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "2.0000000447",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Queue Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "9362.0000008773",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Storage Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "24.0282335519",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AmazonCloudWatch"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0.0340558404",
+              "Unit": "N/A"
+            }
+          }
+        }
+      ],
+      "TimePeriod": {
+        "End": "2024-03-06",
+        "Start": "2024-03-05"
+      },
+      "Total": {}
+    },
+    {
+      "Estimated": true,
+      "Groups": [
+        {
+          "Keys": [
+            "AWS Data Transfer"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "-0.0000292968",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Key Management Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "96",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Lambda"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.000029297",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "4406.4602267239",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon API Gateway"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "189.0000312844",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon DynamoDB"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000000014",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "387.0016536238",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon EC2 Container Registry (ECR)"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "-0.000000012",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0.0036574848",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Notification Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "6.0000001341",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Queue Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "9844.000001803",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Storage Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "-0.0000000001",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "25.0282533433",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AmazonCloudWatch"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0.034115404",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "CloudWatch Events"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "4",
+              "Unit": "N/A"
+            }
+          }
+        }
+      ],
+      "TimePeriod": {
+        "End": "2024-03-07",
+        "Start": "2024-03-06"
+      },
+      "Total": {}
+    },
+    {
+      "Estimated": true,
+      "Groups": [
+        {
+          "Keys": [
+            "AWS Data Transfer"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "-0.0000363146",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Key Management Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "18",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Lambda"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000363147",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "4420.1149489194",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon API Gateway"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "144.0000218621",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon DynamoDB"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000000013",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "24.0016520143",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon EC2 Container Registry (ECR)"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "-0.000000012",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0.0036574848",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Queue Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "9215",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Storage Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "25.0282514538",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AmazonCloudWatch"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0.0339262012",
+              "Unit": "N/A"
+            }
+          }
+        }
+      ],
+      "TimePeriod": {
+        "End": "2024-03-08",
+        "Start": "2024-03-07"
+      },
+      "Total": {}
+    },
+    {
+      "Estimated": true,
+      "Groups": [
+        {
+          "Keys": [
+            "AWS Cost Explorer"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "6",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Data Transfer"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "-0.0000292962",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Key Management Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "9",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AWS Lambda"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0.0000292964",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "4329.6019712811",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon API Gateway"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "167.0000237963",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon DynamoDB"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "-0.0000000012",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "24.0015378435",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon EC2 Container Registry (ECR)"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "-0.000000012",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0.0036574848",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Queue Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "9232",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Simple Storage Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "-0.0000000001",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "25.0282543902",
+              "Unit": "N/A"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "AmazonCloudWatch"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "0",
+              "Unit": "USD"
+            },
+            "UsageQuantity": {
+              "Amount": "0.0339117062",
+              "Unit": "N/A"
+            }
+          }
+        }
+      ],
+      "TimePeriod": {
+        "End": "2024-03-09",
+        "Start": "2024-03-08"
+      },
+      "Total": {}
+    }
+  ]
+}

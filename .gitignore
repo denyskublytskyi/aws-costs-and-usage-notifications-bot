@@ -1,0 +1,9 @@
+**/node_modules
+out
+yarn-error.log
+.idea/workspace.xml
+
+.terraform
+**/terraform.tfstate
+**/terraform.tfstate.backup
+**/terraform.tfvars

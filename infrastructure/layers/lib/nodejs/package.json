@@ -1,0 +1,12 @@
+{
+  "name": "functions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-cost-explorer": "^3.529.1",
+    "lodash": "^4.17.21",
+    "ms": "^2.1.3",
+    "node-fetch": "^3.3.2"
+  }
+}

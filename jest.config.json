@@ -1,0 +1,5 @@
+{
+  "verbose": true,
+  "moduleFileExtensions": ["mjs", "js"],
+  "testMatch": ["**/*.test.mjs"]
+}
