@@ -5,7 +5,22 @@ terraform {
       version = "~> 5.40"
     }
   }
+
+  backend "s3" {
+    bucket = "terraform-state-production-445898693902"
+    key    = "aws-costs-and-usage-notifications/terraform.tfstate"
+    dynamodb_table = "terraform-locks"
+    region = "eu-central-1"
+    encrypt = true
+    assume_role = {
+      role_arn = "arn:aws:iam::445898693902:role/TerraformBackendRole"
+    }
+  }
 }
+
+data "aws_region" "current" {}
+
+data "aws_caller_identity" "current" {}
 
 provider "aws" {
   region = var.AWS_REGION
@@ -62,7 +77,11 @@ data "archive_file" "lambda_zip" {
   type                        = "zip"
   source_dir                  = "functions"
   output_path                 = "../output/functions.zip"
-  excludes                    = setunion(fileset(join("/", [path.module, "functions"]), "**/*.test.mjs"), fileset(join("/", [path.module, "functions"]), "**/__snapshots__/**"))
+  excludes                    = setunion(fileset(join("/", [
+    path.module, "functions"
+  ]), "**/*.test.mjs"), fileset(join("/", [
+    path.module, "functions"
+  ]), "**/__snapshots__/**"))
   exclude_symlink_directories = true
 }
 
