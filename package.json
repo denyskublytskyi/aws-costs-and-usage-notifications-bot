@@ -10,6 +10,7 @@
     "prettier": "^3.2.5"
   },
   "scripts": {
+    "postinstall": "(cd infrastructure/layers/lib/nodejs && yarn)",
     "prepare": "husky",
     "lint-staged": "lint-staged",
     "lint": "eslint . --ext .js,.mjs",
