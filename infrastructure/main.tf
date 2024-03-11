@@ -7,12 +7,12 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "terraform-state-production-445898693902"
-    key    = "aws-costs-and-usage-notifications/terraform.tfstate"
+    bucket         = "terraform-state-production-445898693902"
+    key            = "aws-costs-and-usage-notifications/terraform.tfstate"
     dynamodb_table = "terraform-locks"
-    region = "eu-central-1"
-    encrypt = true
-    assume_role = {
+    region         = "eu-central-1"
+    encrypt        = true
+    assume_role    = {
       role_arn = "arn:aws:iam::445898693902:role/TerraformBackendRole"
     }
   }
@@ -63,6 +63,21 @@ resource "aws_iam_policy" "ce_policy" {
   })
 }
 
+resource "aws_iam_policy" "sqs_policy" {
+  policy = jsonencode({
+    Version   = "2012-10-17",
+    Statement = [
+      {
+        Resource = aws_sqs_queue.dlq.arn
+        Effect   = "Allow",
+        Action   = [
+          "sqs:SendMessage",
+        ]
+      }
+    ]
+  })
+}
+
 resource "aws_iam_role_policy_attachment" "lambda_logs" {
   role       = aws_iam_role.lambda_role.name
   policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
@@ -73,11 +88,16 @@ resource "aws_iam_role_policy_attachment" "lambda_ce" {
   policy_arn = aws_iam_policy.ce_policy.arn
 }
 
+resource "aws_iam_role_policy_attachment" "lambda_sqs" {
+  role       = aws_iam_role.lambda_role.name
+  policy_arn = aws_iam_policy.sqs_policy.arn
+}
+
 data "archive_file" "lambda_zip" {
-  type                        = "zip"
-  source_dir                  = "functions"
-  output_path                 = "../output/functions.zip"
-  excludes                    = setunion(fileset(join("/", [
+  type        = "zip"
+  source_dir  = "functions"
+  output_path = "../output/functions.zip"
+  excludes    = setunion(fileset(join("/", [
     path.module, "functions"
   ]), "**/*.test.mjs"), fileset(join("/", [
     path.module, "functions"
@@ -114,6 +134,11 @@ resource "aws_lambda_function" "aws_costs_and_usage_notifications" {
   publish       = true
   timeout       = 30
   layers        = [aws_lambda_layer_version.lib.arn]
+
+  dead_letter_config {
+    target_arn = aws_sqs_queue.dlq.arn
+  }
+
   environment {
     variables = {
       TELEGRAM_BOT_TOKEN = var.TELEGRAM_BOT_TOKEN
@@ -121,6 +146,19 @@ resource "aws_lambda_function" "aws_costs_and_usage_notifications" {
     }
   }
   source_code_hash = data.archive_file.lambda_zip.output_base64sha256
+}
+
+resource "aws_lambda_function_event_invoke_config" "aws_costs_and_usage_notifications_ali" {
+  function_name          = aws_lambda_function.aws_costs_and_usage_notifications.function_name
+  maximum_retry_attempts = 1
+  maximum_event_age_in_seconds = 60 * 60 * 3
+}
+
+resource "aws_lambda_function_event_invoke_config" "aws_costs_and_usage_notifications" {
+  function_name          = aws_lambda_alias.aws_costs_and_usage_notifications_current_alias.function_name
+  qualifier              = aws_lambda_alias.aws_costs_and_usage_notifications_current_alias.name
+  maximum_retry_attempts = 1
+  maximum_event_age_in_seconds = 60 * 60 * 3
 }
 
 resource "aws_lambda_alias" "aws_costs_and_usage_notifications_current_alias" {
@@ -175,7 +213,6 @@ resource "aws_scheduler_schedule" "aws_costs_and_usage_notifications" {
     }
     dead_letter_config {
       arn = aws_sqs_queue.dlq.arn
-
     }
 
     arn      = aws_lambda_function.aws_costs_and_usage_notifications.arn
