@@ -3,6 +3,7 @@ import fetch from "node-fetch";
 const logger = console;
 
 const sendNotification = async (message) => {
+  const escapedMessage = message.replace(/[_*[\]()~`>#+-=|{}.!]/g, "\\$&");
   const response = await fetch(
     `https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/sendMessage`,
     {
@@ -12,7 +13,7 @@ const sendNotification = async (message) => {
       },
       body: JSON.stringify({
         chat_id: process.env.TELEGRAM_CHAT_ID,
-        text: message,
+        text: escapedMessage,
         parse_mode: "MarkdownV2",
       }),
     },
