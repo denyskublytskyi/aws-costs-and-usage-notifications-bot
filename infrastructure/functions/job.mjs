@@ -74,7 +74,7 @@ const getMessage = ({ data, title }) => {
   );
 
   return [
-    `**${title}** cost: ${totalCost.toFixed(10)}$`,
+    `*${title}* cost: ${totalCost.toFixed(10)}$`,
     ...byServicesMessage,
   ].join("\n\n");
 };
