@@ -1,6 +1,6 @@
 import {
   CostExplorerClient,
-  GetCostAndUsageCommand,
+  GetCostAndUsageCommand
 } from "@aws-sdk/client-cost-explorer";
 import ms from "ms";
 import compose from "lodash/fp/compose.js";
@@ -24,7 +24,7 @@ const getCostAndUsage = async ({ startDate, endDate, granularity }) => {
   const command = new GetCostAndUsageCommand({
     TimePeriod: {
       Start: formatDate(startDate),
-      End: formatDate(endDate),
+      End: formatDate(endDate)
     },
     Granularity: granularity,
     Metrics: ["UnblendedCost", "UsageQuantity"],
@@ -37,9 +37,9 @@ const getCostAndUsage = async ({ startDate, endDate, granularity }) => {
     GroupBy: [
       {
         Type: "DIMENSION",
-        Key: "SERVICE",
-      },
-    ],
+        Key: "SERVICE"
+      }
+    ]
   });
   return client.send(command);
 };
@@ -50,7 +50,7 @@ export const prepareDataByServices = (data) => {
     fpMap(([service, entries]) => ({
       service,
       cost: fpSumBy("cost", entries),
-      usage: fpSumBy("usage", entries),
+      usage: fpSumBy("usage", entries)
     })),
     fpEntries,
     fpGroupBy("service"),
@@ -59,10 +59,10 @@ export const prepareDataByServices = (data) => {
         Groups.map(({ Keys, Metrics }) => ({
           service: Keys[0],
           cost: Math.abs(+Metrics.UnblendedCost.Amount),
-          usage: Math.abs(+Metrics.UsageQuantity.Amount),
+          usage: Math.abs(+Metrics.UsageQuantity.Amount)
         })),
-      1,
-    ),
+      1
+    )
   )(data);
 };
 
@@ -71,16 +71,14 @@ const getMessage = ({ data, title }) => {
   const byServicesMessage = data
     .map(
       ({ service, cost, usage }) =>
-        `*${service}*\nCost: ${cost.toFixed(10)}$\nUsage: ${usage.toFixed(10)}`,
+        `*${service}*\nCost: ${cost.toFixed(10)}$\nUsage: ${usage.toFixed(10)}`
     )
     .join("\n\n");
 
   const message = `**${title}** cost: ${totalCost.toFixed(10)}$\n\n${byServicesMessage}`;
 
   return message
-    .replaceAll(".", "\\.")
-    .replaceAll("(", "\\(")
-    .replaceAll(")", "\\)");
+    .replace(/[_*\[\]()~`>#+-=|{}.!]/g, "\\$&")
 };
 
 const eventHandler = async ({ ScheduledTime }) => {
@@ -92,7 +90,7 @@ const eventHandler = async ({ ScheduledTime }) => {
   const response = await getCostAndUsage({
     startDate: startOfTheMonth,
     endDate: today,
-    granularity: "DAILY",
+    granularity: "DAILY"
   });
 
   const monthlyData = prepareDataByServices(response.ResultsByTime);
@@ -101,14 +99,14 @@ const eventHandler = async ({ ScheduledTime }) => {
   const monthTitle = today.toLocaleString("default", { month: "long" });
   const yesterdayTitle = yesterday.toLocaleDateString("en-GB", {
     month: "long",
-    day: "numeric",
+    day: "numeric"
   });
 
   await Promise.all([
     sendNotification(
-      getMessage({ data: yesterdayData, title: yesterdayTitle }),
+      getMessage({ data: yesterdayData, title: yesterdayTitle })
     ),
-    sendNotification(getMessage({ data: monthlyData, title: monthTitle })),
+    sendNotification(getMessage({ data: monthlyData, title: monthTitle }))
   ]);
 };
 
