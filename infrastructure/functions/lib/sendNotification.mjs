@@ -3,7 +3,7 @@ import fetch from "node-fetch";
 const logger = console;
 
 const sendNotification = async (message) => {
-  const escapedMessage = message.replace(/[_*[\]()~`>#+-=|{}.!]/g, "\\$&");
+  const escapedMessage = message.replace(/[_[\]()~`>#+-=|{}.!]/g, "\\$&");
   const response = await fetch(
     `https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/sendMessage`,
     {
